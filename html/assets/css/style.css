@@ -6,7 +6,10 @@
 /*
 * Google font
 */
-
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Open+Sans:400,600');
+/* font-family: 'Permanent Marker', cursive; */
+@import url('https://fonts.googleapis.com/css?family=Oxygen|Open+Sans:400,600');
+/* font-family: 'Oxygen', sans-serif; */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600|Open+Sans:400,600");
 
 
