@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+        <meta charset="utf-8">
+        <title>BERG - Theme Documentation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!-- bootstrap style -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- main style -->
+        <link href="css/style.css" rel="stylesheet">
+        <!-- font-awesome icon -->
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <!-- et-line-awesome icon -->
+        <link rel="stylesheet" href="css/et-line-icons.css" />
+        <!-- scrollbar -->
+        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+        <link rel="stylesheet" href="css/doc.min.css" />
+    </head>
+    <body>
+        <!-- Begin Body -->
+        <div class="container-fluid no-padding">
+            <div class="row no-margin">
+                <div class="col-md-12">
+                    <div class="docs-navigation no-padding-left" id="leftCol">
+                        <ul class="nav nav-stacked" id="sidebar">
+                            <li class="active"><a class="sec-link" href="#start">Start</a>
+                                <ul>
+                                    <li><a href="#start-welcome" class="inner-link">Welcome</a></li>
+                                    <li><a href="#start-installation" class="inner-link">Installation</a></li>
+                                    <li><a href="#start-html-structure" class="inner-link">HTML Structure</a></li>
+                                    <li><a href="#start-color-schemes" class="inner-link">Color Schemes</a></li>
+                                    <li><a href="#start-icons" class="inner-link">Icons</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="sec-link" href="#demo">Demo</a></li>
+                            <li><a class="sec-link" href="#header">Navigation</a>
+                                <ul>
+                                    <li><a href="#header-page-link" class="inner-link">Page Link</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="sec-link" href="#background">Change Background</a>
+                                <ul>
+                                    <li><a href="#background-default" class="inner-link">Background - Default</a></li>
+                                    <li><a href="#background-parallax" class="inner-link">Background - Parallax</a></li>
+                                    <li><a href="#background-slider" class="inner-link">Background - Slider</a></li>
+                                    <li><a href="#background-slideshow" class="inner-link">Background - Slideshow</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="sec-link" href="#contact-form">Contact Form</a></li>
+                            <li><a class="sec-link" href="#google-map">Google Map</a></li>
+                            <li><a class="sec-link" href="#helper-classes">Helper Classes</a>
+                                <ul>
+                                    <li><a href="#helper-classes-background" class="inner-link">Background</a></li>
+                                    <li><a href="#helper-classes-border" class="inner-link">Border</a></li>
+                                    <li><a href="#helper-classes-text" class="inner-link">Text Size & Color</a></li>
+                                    <li><a href="#helper-classes-miscellaneous" class="inner-link">Miscellaneous</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="sec-link" href="#credits">Credits</a></li>
+                        </ul>
+                        <span class="copyright text-center">&copy; 2018. <a href="https://wrapbootstrap.com/user/etap" class="text-primary" target="_blank">etap</a></span>
+                    </div>  
+                    <div class="docs-content" id="mainCol">
+                        <!-- start section -->
+                        <section id="start">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner" id="start-welcome">
+                                        <h1>BERG - CREATIVE RESUME TEMPLATE</h1>
+                                        <p>Dear customers, thank you for choosing our products. In this document, you will find an in-depth description of all the template's features and functionality.</p>
+                                        <p>If you have any questions not attended to by our template documentation, please contact us. If you like our template, please leave your feedback. Thanks :)</p>
+                                        <p>
+                                            <strong>Template Version:</strong> 3.1<br>
+                                            <strong class="bold">By:</strong> <a href="https://wrapbootstrap.com/user/etap" class="text-primary" target="_blank">etap</a><br>
+                                            <strong class="bold">Response time (up to):</strong> 1 business day.<br>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner" id="start-installation">
+                                        <h1>Installation</h1>
+                                        <p>Follow the steps below to setup your site template:</p>
+                                        <p>Please note that <strong>BERG</strong> is a simple HTML template and not a Wordpress theme/plugin.</p>
+                                        <ol>
+                                            <li>Log into your hosting space via an FTP software (Filezilla for example).</li>
+                                            <li>Unzip the downloaded package and open the <strong>/html</strong> folder to find all the template files.</li>
+                                            <li>Below is the folder structure and needs to be uploaded to your website root directory:
+                                                <ul>
+                                                    <li><code>html/assets/css</code> - Stylesheets folder</li>
+                                                    <li><code>html/assets/fonts</code> – Icon fonts folder</li> 
+                                                    <li><code>html/assets/images</code> - Images folder</li>
+                                                    <li><code>html/assets/img</code> - Images folder</li>
+                                                    <li><code>html/assets/js</code> - Javacripts folder</li>
+                                                    <li><code>html/contact</code> – Contact form PHP files</li>
+                                                </ul>
+                                            </li>
+                                            <li>Upload the HTML files corresponding to the variant of your choice along with all directories in the structure that they appear in your download package. Then, the HTML file should reside in the root directory, and all other files should reside inside their associated folder. <strong>You should upload all or specific HTML files as per your need.</strong></li>
+                                        </ol>
+                                        
+                                        <br>
+                                        <p><span class="label label-danger">Tips</span> Do not start from scratch, use an existing page from the demo and modify it to learn how it works.</p>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner" id="start-html-structure">
+                                        <h1>HTML Structure</h1>
+                                        <p>BERG follows a simple and easy to customize coding structure. Here is the sample for your reference:</p>
+<pre>
+&lt;!doctype html&gt;
+&lt;head&gt;
+    &lt;title&gt;&lt;/title&gt;
+    &lt;meta name="description" content=""/&gt;
+    &lt;meta name="keywords" content=""/&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;
+
+    <span class="comment">&lt;-- Bootstrap CSS --&gt;</span>
+    &lt;link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"&gt;
+    
+    <span class="comment">&lt;-- Font Awesome CSS --&gt;</span>
+    &lt;link href="assets/css/icons-mind.css" rel="stylesheet" type="text/css"&gt;
+    &lt;link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css"&gt;
+
+    <span class="comment">&lt;-- Include all css plugins (below), or include individual files as needed --&gt;</span>
+    ...
+
+    <span class="comment">&lt;-- Theme CSS --&gt;</span>
+    &lt;link href="assets/css/theme.min.css" rel="stylesheet" type="text/css"&gt;
+    &lt;link href="assets/css/style.css" rel="stylesheet" type="text/css"&gt;
+
+    <span class="comment">&lt;-- Color Scheme CSS --&gt;</span>
+    &lt;link href="assets/css/color_pink.css" rel="stylesheet" type="text/css"&gt;
+
+&lt;/head&gt;
+
+&lt;body id="page-top"&gt;
+
+    <span class="comment">&lt;-- Section - Home Start --&gt;</span>
+    &lt;section id="home"&gt;
+        ...
+    &lt;/section&gt;
+    <span class="comment">&lt;-- //Section - Home End --&gt;</span>
+
+    <span class="comment">&lt;-- Navigation Start --&gt;</span>
+    &lt;nav id="navigation" class="navbar navbar-dark navbar-expand-lg bg-dark"&gt;
+        ...
+    &lt;/nav&gt;
+    <span class="comment">&lt;-- //Navigation End --&gt;</span>
+    
+    <span class="comment">&lt;-- Section - Profile Start --&gt;</span>
+    &lt;section id="profile"&gt;
+        ...
+    &lt;/section&gt;
+    <span class="comment">&lt;-- //Section - Profile End --&gt;</span>
+
+    <span class="comment">&lt;-- Section - Portfolio Start --&gt;</span>
+    &lt;section id="portfolio"&gt;
+        ...
+    &lt;/section&gt;
+    <span class="comment">&lt;-- //Section - Portfolio End --&gt;</span>
+
+    <span class="comment">&lt;-- Section - Services Start --&gt;</span>
+    &lt;section id="services"&gt;
+        ...
+    &lt;/section&gt;
+    <span class="comment">&lt;-- //Section - Services End --&gt;</span>
+
+    <span class="comment">&lt;-- Section - Strengths Start --&gt;</span>
+    &lt;section id="strengths"&gt;
+        ...
+    &lt;/section&gt;
+    <span class="comment">&lt;-- //Section - Strengths End --&gt;</span>
+
+    <span class="comment">&lt;-- Section - Resume Start --&gt;</span>
+    &lt;section id="resume"&gt;
+        ...
+    &lt;/section&gt;
+    <span class="comment">&lt;-- //Section - Resume End --&gt;</span>
+
+    <span class="comment">&lt;-- Section - Skills Start --&gt;</span>
+    &lt;section id="skills"&gt;
+        ...
+    &lt;/section&gt;
+    <span class="comment">&lt;-- //Section - Skills End --&gt;</span>
+
+    <span class="comment">&lt;-- Section - Knowledge Start --&gt;</span>
+    &lt;section id="knowledge"&gt;
+        ...
+    &lt;/section&gt;
+    <span class="comment">&lt;-- //Section - Knowledge End --&gt;</span>
+
+    <span class="comment">&lt;-- Section - Accolades Start --&gt;</span>
+    &lt;section id="accolades"&gt;
+        ...
+    &lt;/section&gt;
+    <span class="comment">&lt;-- //Section - Accolades End --&gt;</span>
+
+    <span class="comment">&lt;-- Section - Milestones Start --&gt;</span>
+    &lt;section id="milestones"&gt;
+        ...
+    &lt;/section&gt;
+    <span class="comment">&lt;-- //Section - Milestones End --&gt;</span>
+    
+    <span class="comment">&lt;-- Section - Work Process Start --&gt;</span>
+    &lt;section id="work-process"&gt;
+        ...
+    &lt;/section&gt;
+    <span class="comment">&lt;-- //Section - Work Process End --&gt;</span>
+
+    <span class="comment">&lt;-- Section - Contact Start --&gt;</span>
+    &lt;section id="contact"&gt;
+        ...
+    &lt;/section&gt;
+    <span class="comment">&lt;-- //Section - Contact End --&gt;</span>
+    
+    <span class="comment">&lt;-- Footer Start --&gt;</span>
+    &lt;footer"&gt;
+        ...
+    &lt;/footer&gt;
+    <span class="comment">&lt;-- //Footer End --&gt;</span>
+
+    <span class="comment">&lt;-- Scroll to top --&gt;</span>
+    &lt;a href="#page-top" class="page-scroll scroll-to-top"&gt;&lt;i class="fa fa-angle-up"&gt;&lt;/i&gt;&lt;/a&gt;
+
+    <span class="comment">&lt;-- Main JS --&gt;</span>
+    &lt;script src="assets/js/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script src="assets/js/popper.min.js"&gt;&lt;/script&gt;
+    &lt;script src="assets/js/bootstrap.min.js"&gt;&lt;/script&gt;
+
+    <span class="comment">&lt;-- Include all js plugins (below) --&gt;</span>
+    ...
+
+    <span class="comment">&lt;-- Theme JS --&gt;</span>
+    &lt;script src="assets/js/theme.js"&gt;&lt;/script&gt;
+    
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner" id="start-color-schemes">
+                                        <h1>Color Schemes</h1>
+                                        <p>By default, the template loads this color schemes, you can choose from 8 color schemes:</p>
+<pre>
+<span class="comment">&lt;!-- Color - Blue --&gt;</span>
+&lt;link href="assets/css/color_blue.css" rel="stylesheet" type="text/css"&gt;
+
+<span class="comment">&lt;!-- Color - Green --&gt;</span>
+&lt;link href="assets/css/color_green.css" rel="stylesheet" type="text/css"&gt;
+
+<span class="comment">&lt;!-- Color - Green 2 --&gt;</span>
+&lt;link href="assets/css/color_green2.css" rel="stylesheet" type="text/css"&gt;
+
+<span class="comment">&lt;!-- Color - Orange --&gt;</span>
+&lt;link href="assets/css/color_orange.css" rel="stylesheet" type="text/css"&gt;
+
+<span class="comment">&lt;!-- Color - Pink --&gt;</span>
+&lt;link href="assets/css/color_pink.css" rel="stylesheet" type="text/css"&gt;
+
+<span class="comment">&lt;!-- Color - Purple --&gt;</span>
+&lt;link href="assets/css/color_purple.css" rel="stylesheet" type="text/css"&gt;
+
+<span class="comment">&lt;!-- Color - Red --&gt;</span>
+&lt;link href="assets/css/color_red.css" rel="stylesheet" type="text/css"&gt;
+
+<span class="comment">&lt;!-- Color - Yellow --&gt;</span>
+&lt;link href="assets/css/color_yellow.css" rel="stylesheet" type="text/css"&gt;
+</pre>
+                                        
+                                        <h2>Add Custom Color Scheme</h2>
+                                        <p>The basic process is that we are going to use one of the existing color <strong>(color_pink.css)</strong> and make changes to it to reflect the new custom color scheme. In order to demonstrate, I'm going to create a new custom color scheme based on brown <strong>(color_brown.css)</strong>.</p>
+                                        
+                                        
+                                        <ol>
+                                            <li>
+                                                <p>Make a copy of the original <strong>color_pink.css</strong>.</p>
+                                                <img src="images/custom-color-scheme-1.jpg" alt="" class="thumbnail"/>
+                                                <img src="images/custom-color-scheme-2.jpg" alt="" class="thumbnail"/>
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <p>Rename the file <strong>(color_pink - Copy.css).</strong></p>
+                                                <img src="images/custom-color-scheme-3.jpg" alt="" class="thumbnail"/>
+                                                <img src="images/custom-color-scheme-4.jpg" alt="" class="thumbnail"/>
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <p><strong>Replace color scheme.</strong> Using text editor, edit <strong>color_brown.css</strong> and do a Search/Replace on the file. In my example, I'll change: <strong>#c80a48</strong> (pink) to <strong>#663300</strong> (brown).</p>
+                                                <img src="images/custom-color-scheme-5.jpg" alt="" class="thumbnail"/>
+                                                <img src="images/custom-color-scheme-6.jpg" alt="" class="thumbnail"/>
+                                                <img src="images/custom-color-scheme-7.jpg" alt="" class="thumbnail"/>
+                                                <img src="images/custom-color-scheme-8.jpg" alt="" class="thumbnail"/>
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <p>Add a link to it in the <code>&lt;head&gt;</code> section of the HTML page.</p>
+<pre>
+&lt;head&gt;
+    <span class="comment">&lt;-- Theme CSS --&gt;</span>
+    &lt;link href="assets/css/theme.min.css" rel="stylesheet" type="text/css"&gt;
+    &lt;link href="assets/css/style.css" rel="stylesheet" type="text/css"&gt;
+
+    <span class="comment">&lt;-- Color Scheme CSS --&gt;</span>
+    &lt;link href="assets/css/color_brown.css" rel="stylesheet" type="text/css"&gt;
+
+&lt;/head&gt;
+</pre>
+                                                <img src="images/custom-color-scheme-9.jpg" alt="" class="thumbnail"/>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner" id="start-icons">
+                                        <h1>Icons</h1>
+                                        <p class="no-margin-bottom">In this theme used font icons set from Font Awesome Icons and Icons Mind. In the <code>&lt;head&gt;</code> of your html, reference the location to your font icons style css.</p>
+<pre>
+<span class="comment">&lt;!-- Font CSS --&gt;</span>
+&lt;link href="assets/css/icons-mind.css" rel="stylesheet" type="text/css"&gt;
+&lt;link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css"&gt;
+</pre>
+     
+                                        <br>
+                                        <p class="no-margin-bottom">You can place font icons just about anywhere using the CSS Prefix <code>.fa-</code> and the icon's name. Font icons is designed to be used with inline elements (we like the <code>&lt;i&gt;</code> tag for brevity).</p>
+                                        
+<pre>
+<span class="comment">&lt;!-- Font Awesome Icons --&gt;</span>
+&lt;i class="fa fa-facebook"&gt;&lt;i&gt;
+&lt;i class="fa fa-twitter"&gt;&lt;i&gt;
+
+<span class="comment">&lt;!-- Icons Mind --&gt;</span>
+&lt;i class="icon-File-Download"&gt;&lt;i&gt;
+&lt;i class="icon-Bug"&gt;&lt;i&gt;
+</pre>
+                                        <a class="button" href="http://fontawesome.io/icons/" target="_blank">Font Awesome CheatSheet</a>
+                                        <a class="button" href="../html/assets/plugins/icons-mind/demo.html" target="_blank">Icons Mind CheatSheet</a>
+                                    </div>
+                                    
+                                    <div class="line"></div>
+                                
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner" id="start-selecting-icons">
+                                        <h1>Selecting Icons (Icons Mind)</h1>
+                                        <p>By selecting only the icons that you actually need, you can keep the size of your fonts down.</p>
+
+                                        <ol>
+                                            <li><p>Visit the <a href="https://chrome.google.com/webstore" class="text-primary" target="_blank">Chrome Web Store</a>.</p></li>
+                                            <li>
+                                                <p>Find and select IcoMoon's Chrome extension. Click <strong>Add to Chrome</strong>.</p>
+                                                <img src="images/icons-mind-1.jpg" alt="" class="thumbnail">
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <p>Open IcoMoon's Chrome extension.</p>
+                                                <img src="images/icons-mind-2.jpg" alt="" class="thumbnail">
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <p>Click <strong>Import Icons</strong>.</p>
+                                                <img src="images/icons-mind-3.jpg" alt="" class="thumbnail">
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <p>Browse and select <strong>assets/plugins/icons-mind/selection.json</strong>.</p>
+                                                <img src="images/icons-mind-4.jpg" alt="" class="thumbnail">
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <p>Click <strong>Deselect</strong>.</p>
+                                                <img src="images/icons-mind-5.jpg" alt="" class="thumbnail">
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <p>Browse and search for the icons you need. You can simply click on an icon cell to select or deselect it.</p>
+                                                <img src="images/icons-mind-6.jpg" alt="" class="thumbnail">
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <p>Click <strong>Generate Font</strong>.</p>
+                                                <img src="images/icons-mind-7.jpg" alt="" class="thumbnail">
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <p>Click <strong>Download</strong>.</p>
+                                                <img src="images/icons-mind-8.jpg" alt="" class="thumbnail">
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <p>Unzip and replace your <strong>assets/fonts/icons-mind</strong> font files.</p>
+                                                <img src="images/icons-mind-9.jpg" alt="" class="thumbnail">
+                                                <img src="images/icons-mind-10.jpg" alt="" class="thumbnail">
+                                                <img src="images/icons-mind-11.jpg" alt="" class="thumbnail">
+                                                <img src="images/icons-mind-12.jpg" alt="" class="thumbnail">
+                                                <br>
+                                            </li>
+                                        </ol>
+                                        
+                                        <p class="no-margin-bottom"><strong>BERG icons list:</strong></p>
+                                        <ol>
+                                            <li>icon-Arrow-LeftinCircle</li>
+                                            <li>icon-Arrow-RightinCircle</li>
+                                            <li>icon-Arrow-Up</li>
+                                            <li>icon-Bookmark</li>
+                                            <li>icon-Brush</li>
+                                            <li>icon-Bug</li>
+                                            <li>icon-Chess</li>
+                                            <li>icon-Clock</li>
+                                            <li>icon-Close-Window</li>
+                                            <li>icon-Close</li>
+                                            <li>icon-Coding</li>
+                                            <li>icon-Coffee</li>
+                                            <li>icon-Consulting</li>
+                                            <li>icon-File-Download</li>
+                                            <li>icon-Full-Screen</li>
+                                            <li>icon-Funky</li>
+                                            <li>icon-Gear</li>
+                                            <li>icon-Idea-2</li>
+                                            <li>icon-Leafs-2</li>
+                                            <li>icon-Left-3</li>
+                                            <li>icon-Light-Bulb2</li>
+                                            <li>icon-Link</li>
+                                            <li>icon-Monitor-2</li>
+                                            <li>icon-Monitor-Tablet</li>
+                                            <li>icon-Pencil</li>
+                                            <li>icon-Right-3</li>
+                                            <li>icon-Rocket</li>
+                                            <li>icon-Smile</li>
+                                            <li>icon-Speach-Bubble2</li>
+                                            <li>icon-Speach-Bubble3</li>
+                                            <li>icon-Speach-Bubble11</li>
+                                            <li>icon-Transform-2</li>
+                                            <li>icon-Twitter</li>
+                                            <li>icon-Up-3</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end start section -->
+                        
+                        <!-- demo section -->
+                        <section id="demo" class="hidden">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner">
+                                        <h1>Demos</h1>
+                                        
+                                        <div class="row demos">
+                                            <div class="col-md-6">
+                                                <h2>1. Home - Background Default</h2>
+                                                <a href="../html/home-bg-default.html" target="_blank"><img src="images/home-bg-default.jpg" alt=""></a>    
+                                            </div>
+                                            
+                                            <div class="col-md-6">
+                                                <h2>2. Home - Background Slideshow</h2>
+                                                <a href="../html/home-bg-slideshow.html" target="_blank"><img src="images/home-bg-slideshow.jpg" alt=""></a>    
+                                            </div>
+                                            
+                                            <div class="col-md-6">
+                                                <h2>3. Home - Background Slider</h2>
+                                                <a href="../html/home-bg-slider.html" target="_blank"><img src="images/home-bg-slider.jpg" alt=""></a>
+                                            </div>
+                                            
+                                            <div class="col-md-6">
+                                                <h2>4. Home -  Parallax Background</h2>
+                                                <a href="../html/home-bg-parallax.html" target="_blank"><img src="images/home-bg-parallax.jpg" alt=""></a>
+                                            </div>
+                                            
+                                            <div class="col-md-6">
+                                                <h2>5. Home - Animated Typing</h2>
+                                                <a href="../html/home-animated-typing.html" target="_blank"><img src="images/home-animated-typing.jpg" alt=""></a>
+                                            </div>
+                                            
+                                            <div class="col-md-6">
+                                                <h2>6. Profile Custom v1</h2>
+                                                <a href="../html/profile-custom-1.html" target="_blank"><img src="images/profile-custom-1.jpg" alt=""></a>
+                                            </div>
+                                            
+                                            <div class="col-md-6">
+                                                <h2>7. Profile Custom v2</h2>
+                                                <a href="../html/profile-custom-2.html" target="_blank"><img src="images/profile-custom-2.jpg" alt=""></a>
+                                            </div>
+                                            
+                                            <div class="col-md-6">
+                                                <h2>8. Filterable Portfolio</h2>
+                                                <a href="../html/filterable-portfolio.html" target="_blank"><img src="images/filterable-portfolio.jpg" alt=""></a>
+                                            </div>
+                                            
+                                            <div class="col-md-6">
+                                                <h2>9. Contact Form Custom v1</h2>
+                                                <a href="../html/contact-form-custom.html" target="_blank"><img src="images/contact-form-custom-1.jpg" alt=""></a>
+                                            </div>
+                                            
+                                            <div class="col-md-6">
+                                                <h2>10. Contact Form Custom v2</h2>
+                                                <a href="../html/contact-form-custom-2.html" target="_blank"><img src="images/contact-form-custom-2.jpg" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                            </div>
+                        </section>
+                        <!-- end demo section -->
+                        
+                        <!-- header section -->
+                        <section id="header" class="hidden">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner" id="header-page-link">
+                                        <h1>Page Link</h1>
+                                        <p>You can add link/button which direct you to other section of the same page with smooth scroll effect like it is one page website. You just need to add class: <code>page-scroll</code> and href should be the ID of the section as per the example shown below:</p>
+<pre>
+&lt;a href="#profile" class="page-scroll"&gt;Profile&lt;/a&gt;
+</pre>                                        
+                                        
+<pre>
+<span class="comment">&lt;!-- Section Profile Start --&gt;</span>
+&lt;section id="profile" class="bg-gray-dark-2"&gt;
+    &lt;div class="container"&gt;
+        ...
+    &lt;/div&gt;                    
+&lt;/section&gt;
+<span class="comment">&lt;!-- //Section Profile End --&gt;</span>
+</pre>                                  
+                                        <p><span class="label label-danger">Note</span>Please note that destination section should have valid ID.</p>                                        
+
+                                        <h2>External Page Link</h2>
+<pre>
+&lt;a href="https://wrapbootstrap.com/" target="_blank"&gt;External Page Link&lt;/a&gt;
+</pre>                                        
+                                        
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                            </div>
+                        </section>
+                        <!-- end header section -->
+                        
+                        <!-- background section -->
+                        <section id="background" class="hidden">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner" id="background-default">
+                                        <h1>Background - Default</h1>
+                                      
+                                        <p>Replace your <strong>background-image</strong> path in <strong>assets/css/style.css</strong></p>
+                                            
+                                        <h2>Section - Home</h2>
+                                            
+<pre>
+/*
+* Section - Home
+*/
+
+/** BG Default */
+#home.home-bg-static {
+    background-image: url("../images/bg-home-1.jpg");
+}
+</pre>                                            
+                                            
+                                        <h2>Section - Strengths</h2>
+<pre>
+/*
+* Section - Strengths
+*/
+
+#strengths {
+    background-image: url("../images/bg-strengths.jpg");
+}
+</pre>
+                                        
+                                        <h2>Section - References</h2>
+<pre>
+/*
+* Section - References
+*/
+
+#references {
+    background-image: url("../images/bg-references.jpg");
+}
+</pre>
+                                        
+                                        <h2>Section - Milestones</h2>
+<pre>
+/*
+* Section - Milestones
+*/
+
+#milestones {
+    background-image: url("../images/bg-milestones.jpg");
+}
+</pre>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner" id="background-parallax">
+                                        <h1>Background - Parallax</h1>
+<pre>
+/*
+* Section - Home
+*/
+
+/** BG Parallax */
+#home.home-bg-parallax > .bg-parallax {
+    background: url("../images/bg-home-parallax.jpg");
+}
+</pre>
+                                        <p><span class="label label-danger">Note</span> You can find this demo in <strong>home-bg-parallax.html</strong></p>
+                                        
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner" id="background-slider">
+                                        <h1>Background - Slider</h1>
+<pre>
+/*
+* Section - Home
+*/
+
+/** BG Slider */
+#home.home-bg-slider .flickity-slider > .carousel-cell:nth-child(1) {
+    background: url("../images/bg-home-1.jpg");
+}
+#home.home-bg-slider .flickity-slider > .carousel-cell:nth-child(2) {
+    background: url("../images/bg-home-2.jpg");
+}
+#home.home-bg-slider .flickity-slider > .carousel-cell:nth-child(3) {
+    background: url("../images/bg-home-3.jpg");
+}
+</pre>
+                                        <p><span class="label label-danger">Note</span> You can find this demo in <strong>home-bg-slider.html</strong></p>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner" id="background-slideshow">
+                                        <h1>Background - Slideshow</h1>
+<pre>
+/*
+* Section - Home
+*/
+
+/** BG Slideshow */
+#home.home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(1) {
+    background: url("../images/bg-home-1.jpg");
+}
+#home.home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(2) {
+    background: url("../images/bg-home-2.jpg");
+}
+#home.home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(3) {
+    background: url("../images/bg-home-3.jpg");
+}
+</pre>
+                                        <p><span class="label label-danger">Note</span> You can find this demo in <strong>home-bg-slideshow.html</strong></p>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                            </div>
+                        </section>
+                        <!-- end background section -->                        
+                        
+                        <!-- contact form section -->
+                        <section id="contact-form" class="hidden">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner">
+                                        <h1>Contact Form</h1>
+                                        <p>Your contact form will not work unless you have your files running on a hosting server with PHP / JS. When you have your files ready on your hosting server, you need to edit the settings to make the email function work. To do this, please open <code>html/contact/send_mail.php</code> file and change this line:</p>
+<pre>
+//  Replace with your email 
+$mail_to = 'your_email@your_domain.com';
+</pre>
+                                        
+                                        
+                                        <p><span class="label label-danger">Note</span> This will be functional only on your server, php file can not be executed on your local computer.</p>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                            </div>
+                        </section>
+                        <!-- end contact form section -->
+                        
+                        <!-- google map section -->
+                        <section id="google-map" class="hidden">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner">
+                                        <h1>Google Map</h1>
+                                        <p>Only thing you need to do is to setup your latitude and longitude map location. To do this, please open <strong>assets/js/gmap.js</strong> file and change this line:</p>
+<pre>
+// Set your google maps parameters
+var $latitude = -6.193948, // LATITUDE OF YOUR ADDRESS
+    $longitude = 106.849184, // LONGITUDE OF YOUR ADDRESS
+    $map_zoom = 16;
+</pre>
+                                        
+                                        <p>If you unable to find latitude and longitude of your address please visit <a href="http://www.latlong.net/convert-address-to-lat-long.html" class="text-primary" target="_blank">http://www.latlong.net/convert-address-to-lat-long.html</a> you can easily generate.</p>
+                                        
+                                        <p><span class="label label-danger">Note</span> You can find this demo in <strong>contact-form-custom-2.html</strong></p>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                            </div>
+                        </section>
+                        <!-- end google map section -->
+                        
+                        <!-- helper classes section -->
+                        <section id="helper-classes" class="hidden">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner">
+                                        <h1>Helper Classes</h1>
+                                        <p>We have created some really useful helper classes for you. Here are a few of them:</p>
+                                    </div>
+                                </div>
+                                    
+                                <div class="row">
+                                    <div id="helper-classes-background" class="col-md-12 docs-content-inner">
+                                        <h1>Background</h1>
+                                        
+                                        <ul>
+                                            <li><code>.bg-black</code> - For background color of black</li>
+                                            <li><code>.bg-gray</code> - For background color of gray</li>
+                                            <li><code>.bg-gray-2</code> - For background color of gray</li>
+                                            <li><code>.bg-gray-dark</code> - For background color of gray</li>
+                                            <li><code>.bg-gray-dark-2</code> - For background color of gray</li>
+                                            <li><code>.bg-gray-dark-3</code> - For background color of gray</li>
+                                            <li><code>.bg-white</code> - For background color of white</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                
+                                <div class="row">
+                                    <div id="helper-classes-border" class="col-md-12 docs-content-inner">
+                                        <h1>Border</h1>
+                                        
+                                        <ul>
+                                            <li><code>.border</code> - For border each side</li>
+                                            <li><code>.border-top</code> - For border top side only</li>
+                                            <li><code>.border-right</code> - For border right side only</li>
+                                            <li><code>.border-bottom</code> - For border bottom side only</li>
+                                            <li><code>.border-left</code> - For border left side only</li>
+                                        </ul>
+                                        <br>
+                                        <ul>
+                                            <li><code>.border-top-0</code> - For no border of on the top side</li>
+                                            <li><code>.border-right-0</code> - For no border of on the right side</li>
+                                            <li><code>.border-bottom-0</code> - For no border of on the bottom side</li>
+                                            <li><code>.border-left-0</code> - For no border of on the left side</li>
+                                            <li><code>.border-0</code> - For no border on all sides</li>
+                                        </ul>
+                                        
+                                        <br><br>
+                                        <p><strong>Border Width</strong></p>
+                                        <ul>
+                                            <li><code>.border-thick</code> - For thick border</li>
+                                            <li><code>.border-medium-thick</code> - For very thick border</li>
+                                            <li><code>.border-extra-thick</code> - For very thick border</li>
+                                        </ul>
+                                        
+                                        <br><br>
+                                        <p><strong>Border Radius</strong></p>
+                                        <ul>
+                                            <li><code>.rounded</code> - For border radius</li>
+                                            <li><code>.rounded-circle</code> - For border radius of 50%</li>
+                                            <li><code>.rounded-0</code> - For no border radius</li>
+                                        </ul>
+                                        
+                                        <br><br>
+                                        <p><strong>Border Color</strong></p>
+                                        <ul>
+                                            <li><code>.border-black</code> - For border color of black</li>
+                                            <li><code>.border-gray</code> - For border color of gray</li>
+                                            <li><code>.border-gray-2</code> - For border color of gray</li>
+                                            <li><code>.border-gray-dark</code> - For border color of gray</li>
+                                            <li><code>.border-gray-dark-2</code> - For border color of gray</li>
+                                            <li><code>.border-gray-dark-3</code> - For border color of gray</li>
+                                            <li><code>.border-white</code> - For border color of white</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                
+                                <div class="row">
+                                    <div id="helper-classes-text" class="col-md-12 docs-content-inner">
+                                        <h1>Text Size & Color</h1>
+                                        
+                                        <p><strong>Text Size</strong></p>
+                                        <ul>
+                                            <li><code>.text-extra-small</code> - For extra small size of text</li>
+                                            <li><code>.text-small</code> - For small size of text</li>
+                                            <li><code>.text-medium</code> - For medium size of text</li>
+                                            <li><code>.text-large</code> - For large size of text</li>
+                                            <li><code>.text-extra-large</code> - For extra large size of text</li>
+                                            <li><code>.title-small</code> - For small size of title</li>
+                                            <li><code>.title-medium</code> - For medium size of title</li>
+                                            <li><code>.title-large</code> - For large size of title</li>
+                                            <li><code>.title-extra-large</code> - For extra large size of title</li>
+                                            <li><code>.title-extra-large-2</code> - For extra large size of title</li>
+                                            <li><code>.title-extra-large-3</code> - For extra large size of title</li>
+                                            <li><code>.title-extra-large-4</code> - For extra large size of title</li>
+                                            <li><code>.title-extra-large-5</code> - For extra large size of title</li>
+                                            <li><code>.title-big</code> - For very large size of title</li>
+                                            <li><code>.title-big2</code> - For very large size of title</li>
+                                            <li><code>.title-big3</code> - For very large size of title</li>
+                                        </ul>
+                                        
+                                        <br><br>
+                                        <p><strong>Text Color</strong></p>
+                                        <ul>
+                                            <li><code>.text-black</code> - For black color text</li>
+                                            <li><code>.text-gray</code> - For gray color text</li>
+                                            <li><code>.text-gray-2</code> - For gray color text</li>
+                                            <li><code>.text-gray-dark</code> - For gray color text</li>
+                                            <li><code>.text-gray-dark-2</code> - For gray color text</li>
+                                            <li><code>.text-gray-dark-3</code> - For gray color text</li>
+                                            <li><code>.text-white</code> - For white color text</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                
+                                <div class="row">
+                                    <div id="helper-classes-miscellaneous" class="col-md-12 docs-content-inner">
+                                        <h1>Miscellaneous</h1>
+                                        
+                                        <p><strong>Display</strong></p>
+                                        <ul>
+                                            <li><code>.d-block</code> - For display block</li>
+                                            <li><code>.d-inherit</code> - For display inherit</li>
+                                            <li><code>.d-inline</code> - For display inline</li>
+                                            <li><code>.d-inline-block</code> - For display inline-block</li>
+                                            <li><code>.d-table</code> - For display table</li>
+                                            <li><code>.d-table-cell</code> - For display table-cell</li>
+                                        </ul>
+                                        
+                                        <br><br>
+                                        <p><strong>Font Weight</strong></p>
+                                        <ul>
+                                            <li><code>.font-w-300</code> - For font weight of 300</li>
+                                            <li><code>.font-w-400</code> - For font weight of 400</li>
+                                            <li><code>.font-w-600</code> - For font weight of 600</li>
+                                            <li><code>.font-w-700</code> - For font weight of 700</li>
+                                            <li><code>.font-w-900</code> - For font weight of 900</li>
+                                        </ul>
+                                        
+                                        <br><br>
+                                        <p><strong>Letter Spacing</strong></p>
+                                        <ul>
+                                            <li><code>.letter-spacing-1</code> - For letter spacing of 1 pixel</li>
+                                            <li><code>.letter-spacing-2</code> - For letter spacing of 2 pixel</li>
+                                            <li><code>.letter-spacing-3</code> - For letter spacing of 3 pixel</li>
+                                            <li><code>.letter-spacing-4</code> - For letter spacing of 4 pixel</li>
+                                            <li><code>.letter-spacing-5</code> - For letter spacing of 5 pixel</li>
+                                            <li><code>.letter-spacing-6</code> - For letter spacing of 6 pixel</li>
+                                            <li><code>.letter-spacing-7</code> - For letter spacing of 7 pixel</li>
+                                            <li><code>.letter-spacing-8</code> - For letter spacing of 8 pixel</li>
+                                            <li><code>.letter-spacing-9</code> - For letter spacing of 9 pixel</li>
+                                            <li><code>.letter-spacing-10</code> - For letter spacing of 10 pixel</li>
+                                            <li><code>.no-letter-spacing</code> - For letter spacing of none</li>
+                                        </ul>
+                                        
+                                        <br><br>
+                                        <p><strong>Opacity</strong></p>
+                                        <ul>
+                                            <li><code>.opacity-0</code> - Fully transparent</li>
+                                            <li><code>.opacity-1</code> - For opacity level of 0.1</li>
+                                            <li><code>.opacity-2</code> - For opacity level of 0.2</li>
+                                            <li><code>.opacity-3</code> - For opacity level of 0.3</li>
+                                            <li><code>.opacity-4</code> - For opacity level of 0.4</li>
+                                            <li><code>.opacity-5</code> - For opacity level of 0.5</li>
+                                            <li><code>.opacity-6</code> - For opacity level of 0.6</li>
+                                            <li><code>.opacity-7</code> - For opacity level of 0.7</li>
+                                            <li><code>.opacity-8</code> - For opacity level of 0.8</li>
+                                            <li><code>.opacity-9</code> - For opacity level of 0.9</li>
+                                            <li><code>.no-opacity</code> - Fully opaque</li>
+                                        </ul>
+                                        
+                                        <br><br>
+                                        <p><strong>Overflow</strong></p>
+                                        <ul>
+                                            <li><code>.overflow-hidden</code> - For overflow hidden</li>
+                                        </ul>
+                                        
+                                        <br><br>
+                                        <p><strong>Position</strong></p>
+                                        <ul>
+                                            <li><code>.position-absolute</code> - For element position absolute</li>
+                                            <li><code>.position-fixed</code> - For element position fixed</li>
+                                            <li><code>.position-relative</code> - For element position relative</li>
+                                            <li><code>.top-0</code> - For element position fixed to top of the body or parent element</li>
+                                            <li><code>.right-0</code> - For element position fixed to right of the body or parent element</li>
+                                            <li><code>.bottom-0</code> - For element position fixed to bottom of the body or parent element</li>
+                                            <li><code>.left-0</code> - For element position fixed to left of the body or parent element</li>
+                                            <li><code>.top-50</code> - For element position fixed 50% down from the top of the body or parent element</li>
+                                            <li><code>.left-50</code> - For element position fixed 50% from the left of the body or parent element</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end helper classes section -->
+                       
+                        <!-- credits section -->
+                        <section id="credits" class="hidden">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12 docs-content-inner" id="credits">
+                                        <h1>Credits and Sources</h1>
+                                        <p>We would really love to take this opportunity to appreciate guys whose items were helpful to us to make BERG a really beautiful theme for our awesome users:</p>
+                                        <div class="col-md-12 no-padding">
+                                            <div class="col-md-12">
+                                                <h2 class="no-padding-top">Plugins</h2>
+                                                <ul class="credits">
+                                                    <li><a href="https://github.com/mhuggins/jquery-countTo" class="text-primary" target="_blank">Count To</a></li>
+                                                    <li><a href="http://gsgd.co.uk/sandbox/jquery/easing/" class="text-primary" target="_blank">Easing</a></li>
+                                                    <li><a href="http://fortawesome.github.io/Font-Awesome/icons/" class="text-primary" target="_blank">Font Awesome</a></li>
+                                                    <li><a href="http://www.woothemes.com/flexslider/" class="text-primary" target="_blank">Flexslider</a></li>
+                                                    <li><a href="http://flickity.metafizzy.co/" class="text-primary" target="_blank">Flickity</a></li>
+                                                    <li><a href="http://imagesloaded.desandro.com/" class="text-primary" target="_blank">Images Loaded</a></li>
+                                                    <li><a href="https://github.com/protonet/jquery.inview" class="text-primary" target="_blank">Inview</a></li>
+                                                    <li><a href="http://isotope.metafizzy.co/" class="text-primary" target="_blank">Isotope</a></li>
+                                                    <li><a href="http://jquery.com/" class="text-primary" target="_blank">jQuery</a></li>
+                                                    <li><a href="http://dimsemenov.com/plugins/magnific-popup/" class="text-primary" target="_blank">Magnific Popup</a></li>
+                                                    <li><a href="http://brm.io/jquery-match-height/" class="text-primary" target="_blank">Match Height</a></li>
+                                                    <li><a href="http://github.hubspot.com/pace/docs/welcome/" class="text-primary" target="_blank">Pace</a></li>
+                                                    <li><a href="http://scrollmagic.io/" class="text-primary" target="_blank">Scroll Magic</a></li>
+                                                    <li><a href="https://select2.github.io/" class="text-primary" target="_blank">Select2</a></li>
+                                                    <li><a href="http://stickyjs.com/" class="text-primary" target="_blank">Sticky JS</a></li>
+                                                    <li><a href="http://getbootstrap.com/" class="text-primary" target="_blank">Twitter Bootstrap</a></li>
+                                                    <li><a href="http://www.mattboldt.com/demos/typed-js/" class="text-primary" target="_blank">Typed JS</a></li>
+                                                    <li><a href="http://jqueryvalidation.org/" class="text-primary" target="_blank">Validation</a></li>
+                                                </ul>
+                                                <br>
+                                                <br>
+                                                <h2 class="no-padding-top">PHP Library</h2>
+                                                <ul class="credits">
+                                                    <li><a href="http://phpmailer.worxware.com/" class="text-primary" target="_blank">PHP Mailer</a></li>
+                                                </ul>
+                                                <br>
+                                                <br>
+                                                <h2 class="no-padding-top">Images used on demo</h2>
+                                                <p>The images included in preview are for demonstration purposes and should always be replaced with your own work.</p>
+                                                <ul class="credits">
+                                                    <li><a href="https://www.behance.net/gallery/25963987/Buzz-Lightyear" class="text-primary" target="_blank">Buzz Lightyear</a></li>
+                                                    <li><a href="https://www.behance.net/gallery/25344153/Robosam-3" class="text-primary" target="_blank">Robosam 3</a></li>
+                                                    <li><a href="https://www.behance.net/gallery/25821381/Coke-Man-and-Dog" class="text-primary" target="_blank">Coke Man and Dog</a></li>
+                                                    <li><a href="https://www.behance.net/gallery/20195929/Speed-Projects" class="text-primary" target="_blank">Speed Projects</a></li>
+                                                    <li><a href="https://www.behance.net/gallery/26043281/Wooden-Rhinoceros-Beetle" class="text-primary" target="_blank">Wooden Rhinoceros Beetle</a></li>
+                                                    <li><a href="https://www.behance.net/gallery/25505317/The-first-Encounter" class="text-primary" target="_blank">The First Encounter</a></li>
+                                                    <li><a href="https://www.behance.net/gallery/25763797/DEADPOOL" class="text-primary" target="_blank">Dead Pool</a></li>
+                                                    <li><a href="https://www.behance.net/gallery/19401293/Rebus-2" class="text-primary" target="_blank">Rebus II</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                            </div>
+                        </section>
+                        <!-- end credits section -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- scroll to top --> 
+        <a href="javascript:;" class="scrollToTop"><i class="fa fa-angle-up"></i></a> 
+        <!-- scroll to top End... --> 
+        <div id="footer"></div>
+        <script type='text/javascript' src="js/jquery.min.js"></script>
+        <script type='text/javascript' src="js/jquery.easing.1.3.js"></script>
+        <script type='text/javascript' src="js/bootstrap.min.js"></script>
+        <script type='text/javascript' src="js/smooth-scroll.js"></script>
+        <script type='text/javascript' src="js/jquery.mCustomScrollbar.min.js"></script>
+        <script type='text/javascript' src="js/custom.js"></script>
+    </body>
+</html>
