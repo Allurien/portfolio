@@ -99,7 +99,7 @@ pre {padding: 50px; white-space: pre-wrap; background-color: #fcfcfc; border: 2p
 .comment:last-child {margin: 10px 0 0 0}
 .docs-content-inner {min-height: 350px}
 .docs-content a {font-weight: 600; /*text-decoration: underline*/}
-//.docs-content a:visited { color: #000}
+.docs-content a:visited { color: #000}
 .docs-content ul {padding-left: 45px}
 .docs-content ul li { list-style: disc;}
 .columns [class^="col-"], .bootstrap-grid [class^="col-"] { border: 1px solid #e2e2e2; background: #f9f9f9;}
