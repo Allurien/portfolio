@@ -63,3 +63,18 @@
 .text-base-color {
     color: #0D485B !important;
 }
+
+/* 
+* Header Font
+*/
+
+.header-alt {
+    font-family: 'Permanent Marker', sans-serif !important;
+    color: #630A5B;
+    text-shadow: 2px 2px 8px black;
+    
+}
+h3 {
+    font-family: 'Permanent Marker', sans-serif !important;
+    color: #630A5B;
+}
