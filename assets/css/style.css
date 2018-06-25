@@ -33,7 +33,7 @@
 
 /** BG Default */
 #home.home-bg-static {
-    background-image: url("../images/bg-home-1.jpg");
+    background-image: url("../images/veilnebula.jpg");
 }
 
 /** BG Parallax */
@@ -43,7 +43,7 @@
 
 /** BG Slider */
 #home.home-bg-slider .flickity-slider > .carousel-cell:nth-child(1) {
-    background: url("../images/bg-home-1.jpg");
+    background: url("../images/testbg.jpg");
 }
 #home.home-bg-slider .flickity-slider > .carousel-cell:nth-child(2) {
     background: url("../images/bg-home-2.jpg");
@@ -54,7 +54,7 @@
 
 /** BG Slideshow */
 #home.home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(1) {
-    background: url("../images/bg-home-1.jpg");
+    background: url("../images/testbg.jpg");
 }
 #home.home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(2) {
     background: url("../images/bg-home-2.jpg");
