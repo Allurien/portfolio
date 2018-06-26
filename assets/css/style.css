@@ -277,6 +277,9 @@
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg);
     }
+    .mobileIcons {
+        width: 50%;
+    }
 }
 @media (min-width: 768px) {
     .work-process > .item > .item-content.mt-0 > .icon-arrow {
