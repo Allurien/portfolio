@@ -11,6 +11,10 @@
 @import url('https://fonts.googleapis.com/css?family=Oxygen|Open+Sans:400,600');
 /* font-family: 'Oxygen', sans-serif; */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600|Open+Sans:400,600");
+/* font-family: 'Days One', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Days+One');
+/* font-family: 'Kaushan Script', cursive; */
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 
 
 /*
@@ -33,12 +37,12 @@
 
 /** BG Default */
 #home.home-bg-static {
-    background-image: url("../images/veilnebula.jpg");
+    background-image: url("../images/testbg.jpg");
 }
 
 /** BG Parallax */
 #home.home-bg-parallax > .bg-parallax {
-    background: url("../images/bg-home-parallax.jpg");
+    background: url("../images/images/testbg.jpg");
 }
 
 /** BG Slider */
@@ -157,7 +161,8 @@
 */
 
 #milestones {
-    background-image: url("../images/bg-milestones.jpg");
+    background-image: url("../images/comet.png");
+    background-position: bottom;
 }
 
 
