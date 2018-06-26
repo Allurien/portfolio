@@ -69,12 +69,20 @@
 */
 
 .header-alt {
-    font-family: 'Permanent Marker', sans-serif !important;
-    color: #630A5B;
+    font-family: 'Kaushan Script', sans-serif !important;
+    color: #0D485B;
     text-shadow: 2px 2px 8px black;
     
 }
 h3 {
-    font-family: 'Permanent Marker', sans-serif !important;
-    color: #630A5B;
+    font-family: 'Days One', sans-serif !important;
+    color: #0D485B;
+}
+
+/* Icons */
+.iconImage {
+    max-width: 100px;
+}
+.fa-adjust {
+    vertical-align: 0%;
 }
