@@ -372,13 +372,14 @@
                 okMessage = 'Email Sent!';
             
             $btnForm.html(sendingMessage);
-            
+            console.log('form serialize', $form.serialize());
             $.ajax({
-                url: $form.attr('action'),
+                url: '../../php_mailer/mail_handler.php',
                 type: 'post',
                 dataType: 'json',
                 data: $form.serialize(),
                 success: function(data){
+                    console.log('success data', data);
                     if (data === true){
                         $btnForm.html(okMessage);
                         $form.find('input[type="text"], input[type="email"], textarea, select').val('');
@@ -392,6 +393,7 @@
                     }, 3000);
                 },
                 error: function(xhr, err){
+                    console.log('error response', err);
                     $btnForm.html(errorMessage);
 
                     setTimeout(function(){
