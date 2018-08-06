@@ -40,7 +40,7 @@ if($output['success'] !== null) {
 }
 
 $mail = new PHPMailer;
-$mail->SMTPDebug = 3;           // Enable verbose debug output. Change to 0 to disable debugging output.
+$mail->SMTPDebug = 0;           // Enable verbose debug output. Change to 0 to disable debugging output.
 
 $mail->isSMTP();                // Set mailer to use SMTP.
 $mail->Host = 'smtp.gmail.com'; // Specify main and backup SMTP servers.
@@ -71,7 +71,7 @@ $mail->addReplyTo($message['email'], $message['name']);                         
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);         
 // $message['subject'] = $message['name'] . "has sent you a message on your portfolio";       
-$message['subject'] = substr($message['message'], 0, 78);
+$message['subject'] = substr($message['subject'], 0, 78);
 
 $mail->Subject = $message['subject'];
 $mail->Body    = $message['message'];
