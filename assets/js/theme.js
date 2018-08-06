@@ -380,7 +380,7 @@
                 data: $form.serialize(),
                 success: function(data){
                     console.log('success data', data);
-                    if (data === true){
+                    if (data.success === true){
                         $btnForm.html(okMessage);
                         $form.find('input[type="text"], input[type="email"], textarea, select').val('');
                     }
