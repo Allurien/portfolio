@@ -392,7 +392,7 @@
                         $btnForm.html(defaultMessage);
                     }, 3000);
                 },
-                error: function(xhr, err){
+                error: function(err){
                     console.log('error response', err);
                     $btnForm.html(errorMessage);
 
