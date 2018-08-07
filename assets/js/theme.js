@@ -224,21 +224,21 @@
         
         
         /** Gallery - Magnific popup */
-        if ($.fn.magnificPopup){
-            $galleryGrid.magnificPopup({
-                delegate: 'a.zoom',
-                type: 'image',
-                mainClass: 'mfp-fade',
-                gallery:{
-                    enabled: true,
-                    navigateByImgClick: true,
-                    preload: [0,2],
-                    tPrev: 'Previous',
-                    tNext: 'Next',
-                    tCounter: '<span class="mfp-counter-curr">%curr%</span> of <span class="mfp-counter-total">%total%</span>'
-                }
-            });
-        }
+        // if ($.fn.magnificPopup){
+        //     $galleryGrid.magnificPopup({
+        //         delegate: 'a.zoom',
+        //         type: 'image',
+        //         mainClass: 'mfp-fade',
+        //         gallery:{
+        //             enabled: true,
+        //             navigateByImgClick: true,
+        //             preload: [0,2],
+        //             tPrev: 'Previous',
+        //             tNext: 'Next',
+        //             tCounter: '<span class="mfp-counter-curr">%curr%</span> of <span class="mfp-counter-total">%total%</span>'
+        //         }
+        //     });
+        // }
         
         
         /** Gallery - Filter */
