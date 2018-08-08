@@ -783,6 +783,9 @@ select.form-control {
     letter-spacing: 0.025rem !important;
     padding: 0.75rem 0.875rem 0.75rem 0;
 }
+input.valid[type=text].form-control{
+    border-bottom: 1px solid green !important;
+}
 input.error[type="email"].form-control,
 input.error[type="text"].form-control,
 textarea.error.form-control,
