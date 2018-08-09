@@ -1,7 +1,7 @@
 <?php
  header("Access-Control-Allow-Origin: *");
 require_once('email_config.php');
-require('phpmailer/PHPMailer-old/PHPMailerAutoload.php');
+require('phpmailer/PHPMailer/PHPMailerAutoload.php');
 
 $message = [];
 $output = [

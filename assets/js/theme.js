@@ -45,7 +45,7 @@
     */
    
     $window.on('load', function(){
-        
+        document.body.addEventListener('touchstart',function(){});
         /** Bootstrap scrollspy */
         var ww = Math.max($window.width(), window.innerWidth);
         $body.scrollspy({    
@@ -158,8 +158,15 @@
             // Automatically retract the navigation after clicking on one of the menu items.
             $navbarCollapse.collapse('hide');
         };
-        
-        
+        $(document).mouseup(function(e){
+            var container = $navbar;
+            // if the target of the click isn't the container nor a descendant of the container
+            if (!container.is(e.target) && container.has(e.target).length === 0)
+            {
+                $navbarCollapse.collapse('hide');
+            }
+        });
+
         /** BG Parallax */
         if (typeof ScrollMagic !== 'undefined'){
             var selector = '.home-bg-parallax';
@@ -355,9 +362,51 @@
         /** Form - Contact */
         var $formContact = $('#form-contact'),
             $btnFormContact = $('#btn-form-contact');
+            $.validator.methods.email = function( value, element ) {
+                return this.optional( element ) || /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$/.test( value );
+              }
+            $.validator.methods.name = function( value, element ) {
+            return this.optional( element ) || /(.*[a-z]){3}$/.test( value );
+            }
+            $.validator.methods.subject = function( value, element ) {
+                return this.optional( element ) || /(.*[a-z]){3}$/.test( value );
+            }
+            $.validator.methods.message = function( value, element ) {
+                return this.optional( element ) || /(.*[a-z]){3}$/.test( value );
+            }
         
         $btnFormContact.on('click', function(e){
-            $formContact.validate();
+            $formContact.validate({
+                rules:{
+                    Name: {
+                        required: {
+                            depends:function(){
+                                var trimmed = $(this).val($.trim($(this).val()));
+                                if(trimmed==""){
+                                    return false;
+                                }
+                                return true;
+                            }
+                        },
+                        nowhitespace: true
+                    },
+                    Email: {
+                        required: {
+                            depends:function(){
+                                $(this).val($.trim($(this).val()));
+                                return true;
+                            }
+                        },
+                        email: true
+                    },
+                    Subject: {
+                        nowhitespace: true
+                    },
+                    Message: {
+                        nowhitespace: true
+                    }
+                }
+            });
             if ($formContact.valid()){
                 send_mail($formContact, $btnFormContact);
             }
