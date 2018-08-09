@@ -1,0 +1,98 @@
+/*
+* Color
+*/
+
+/*
+* Background color
+*/
+
+.bg-base-color {
+    background-color: #0D485B !important;
+}
+
+
+/*
+* Border color
+*/
+
+.border-base-color {
+    border-color: #0D485B !important;
+}
+
+
+/*
+* Button color
+*/
+
+.btn-base-color {
+    background-color: #0D485B !important;
+}
+
+
+/*
+* Flickity
+*/
+
+.carousel-custom.carousel-fullscreen .flickity-page-dots .dot.is-selected {
+    background: #0D485B !important;
+}
+
+
+/*
+* Preloader
+*/
+
+.pace .pace-progress {
+    background-color: #0D485B !important;
+}
+
+
+/*
+* Select2 custom
+*/
+
+.select2-dropdown-custom .select2-results > .select2-results__options > .select2-results__option[aria-selected=true] {
+    background-color: #0D485B !important;
+}
+
+
+/*
+* Text color
+*/
+
+.text-base-color {
+    color: #0D485B !important;
+}
+
+/* 
+* Header Font
+*/
+
+.header-alt {
+    font-family: 'Montserrat', sans-serif !important;
+    color: #0D485B;
+    text-shadow: 2px 2px 8px black;
+    
+}
+h3 {
+    font-family: 'Days One', sans-serif !important;
+    color: #0D485B;
+}
+
+/* Icons */
+.iconImage {
+    max-width: 100px;
+}
+.fa-adjust {
+    vertical-align: 0%;
+}
+
+.profile-img {
+    top: 0;
+    left: 0;
+    transform: translate(20%, 40%);
+    width: 60%;
+}
+.card-body p{
+    margin-top: 2%!important;
+}
