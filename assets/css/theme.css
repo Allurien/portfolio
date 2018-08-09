@@ -770,6 +770,7 @@ a[href^=tel] {
 * Form
 */
 
+input[type="field"].form-control,
 input[type="email"].form-control,
 input[type="text"].form-control,
 textarea.form-control,
